@@ -16,9 +16,8 @@ resource "aws_instance" "backend" {
   key_name               = "${var.key_name}"
   vpc_security_group_ids = ["${var.sg-id}"]
   tags = {
-    Name = TerraformEC2
-    Env = Dev
-    }
+    Name = "TerraformEC2"
+  }
 
 }
 
